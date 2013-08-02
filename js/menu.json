@@ -10,5 +10,13 @@
   {
     "title" : "Page C (Elephants)",
     "url"   : "adv-page-c.html"
+  },
+  {
+    "title"  : "Additional Section",
+    "header" : true
+  },
+  {
+    "title"  : "Page D (Tigers)",
+    "url"   : "adv-page-d.html"
   }
 ]
