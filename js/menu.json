@@ -1,0 +1,14 @@
+[
+  {
+    "title" : "Page A (Cats)",
+    "url"   : "adv-page-a.html"
+  },
+  {
+    "title" : "Page B (Dogs)",
+    "url"   : "adv-page-b.html"
+  },
+  {
+    "title" : "Page C (Elephants)",
+    "url"   : "adv-page-c.html"
+  }
+]
