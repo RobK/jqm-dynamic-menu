@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQueryMobile :: Advanced Dynamic Menu :: Page C</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css">
+
+  <!-- jQuery and jQuery Mobile -->
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.2.min.js"></script>
+  <script src="js/menu-adv.js"></script>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+  <div data-theme="a" data-role="header">
+    <a href="#menu" data-role="button" data-theme="c" data-rel="back" data-inline="true" data-icon="bars">
+      Menu
+    </a>
+    <h3>
+      Advanced Dynamic Menu :: Page C
+    </h3>
+  </div>
+  <!-- This is the hidden panel that opens to show the menu -->
+  <div data-role="panel" id="menu" data-display="push">
+    <div class="ui-panel-inner">
+      <!-- This UL is the menu, where the items will be added -->
+      <!-- Make sure you don't add any <li> or any other content inside it! -->
+      <ul data-role="listview" class="mainMenu"></ul>
+
+    </div>
+  </div>
+  <!-- /panel -->
+  <div data-role="content">
+    <h3>Advanced Page C (Elephants)</h3>
+    This simple implementation shows a more advanced implementation of a dynamic menu.
+    <ul>
+      <li>Menu highlighting</li>
+      <li>Ajax loading of menu</li>
+      <li>Menu header</li>
+    </ul>
+    <p>
+      <img src="img/elephant.jpg">
+    </p>
+  </div>
+</div>
+</body>
+</html>
