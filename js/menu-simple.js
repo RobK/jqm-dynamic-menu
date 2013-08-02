@@ -9,11 +9,11 @@ var menu = [
     url   : "simple-page-a.html"
   },
   {
-    title : "Page A (Dogs)",
-    url   : "simple-page-a.html"
+    title : "Page B (Dogs)",
+    url   : "simple-page-b.html"
   },
   {
-    title : "Page A (Elephants)",
+    title : "Page C (Elephants)",
     url   : "simple-page-c.html"
   }
 ];
