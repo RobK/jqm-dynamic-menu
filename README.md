@@ -28,4 +28,4 @@ More info
 ---------
 
 This project is discussed in more detail on my blog post: 
-[http://www.robertkehoe.com/2013/08/jquery-mobile-dynamic-menu/](http://www.robertkehoe.com/2013/08/jquery-mobile-dynamic-menu/)
+[http://www.robertkehoe.com/2013/08/jquery-mobile-dynamic-navigation-menu/](http://www.robertkehoe.com/2013/08/jquery-mobile-dynamic-navigation-menu/)
