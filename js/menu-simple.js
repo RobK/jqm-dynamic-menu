@@ -3,6 +3,7 @@
  * Date: 02/Aug/13 16:37
  */
 
+// The Menu items and links
 var menu = [
   {
     title : "Page A (Cats)",
@@ -18,23 +19,17 @@ var menu = [
   }
 ];
 
+// For this "simple demo" we can change event to "pageinit", but for the more advanced features, it has to be bound to "pageshow"
 $(document).on("pageshow", function (event) {
 
+  var items = '', // menu items list
+    ul = $(".mainMenu:empty");  // get "every" mainMenu that has not yet been processed
 
-  var ul = $(".mainMenu:empty");  // cache the "new" ul menu element that has been proloaded by jqm
-
-  if (ul.length > 0) { // only operate on pages where menu not already added
-
-    var items = '<li data-role="list-divider">Navigation</li>';
-
-    for (var i = 0; i < menu.length; i++) {
-      items += '<li><a href="' + menu[i].url + '">' + menu[i].title + '</a></li>';
-    }
-
-    ul.append(items);
-    ul.listview('refresh'); // use cache, as ".mainMenu:empty" will no longer work (append called!)
-
+  for (var i = 0; i < menu.length; i++) {
+    items += '<li><a href="' + menu[i].url + '">' + menu[i].title + '</a></li>';
   }
 
+  ul.append(items);
+  ul.listview('refresh'); // use cache, as ".mainMenu:empty" will no longer work (append called!)
 
 });
