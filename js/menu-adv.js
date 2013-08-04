@@ -25,7 +25,8 @@ $(document).on("pageshow", function () {
 namespace.buildMenu = function () {
 
   // Select and cache all "empty" menus. Each page contains an empty menu
-  // jqm Ajax preloading of pages will cause multiple pages to be present in the DOM (but only current visible)
+  // jqm Ajax preloading of pages will cause multiple pages to be present in the DOM, in order to have page transitions,
+  // but only one page visible
   var ul = $(".mainMenu:empty");
 
 
@@ -57,7 +58,7 @@ namespace.buildMenu = function () {
     }
 
     ul.append(items);
-    ul.listview('refresh'); // use cache, as ".mainMenu:empty" will no longer work (append called!)
+    ul.listview('refresh'); // Tell JQM to restyle the menu now it has been updated.
   }
 
 };
